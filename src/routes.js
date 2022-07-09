@@ -20,15 +20,19 @@ const routers = createRouter({
       component: AboutPage
     },
     {
+      path: '/404',
+      name: 'notFound',
+      component: NotFound,
+      meta: {
+        title: "страница не найдена",
+        din: false,
+      }
+    },
+    {
       path: '/:itemAlias',
       name: 'itemAlias',
       component: Item,
     },
-    {
-      path: '/:CatchAll(.*)',
-      name: 'notFound',
-      component: NotFound,
-    }
   ]
 })
 

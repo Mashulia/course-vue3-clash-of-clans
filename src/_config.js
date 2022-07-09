@@ -2,7 +2,7 @@ export const process = {
     dev: 'false'
 }
 export const site = {
-    home: process.dev? "http://localhost:8080": "https://ivanov.ru"
+    title: 'Clash of Clans'
 }
 
 export const links = [

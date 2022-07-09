@@ -2,7 +2,9 @@
   <div class="wrapper">
     <TheHeader/>
     <div class="wrapper-content">
-      <div class="container">
+      <div class="view-sm isCenter">
+        <div class="container">
+        </div>
         <router-view/>
       </div>
     </div>

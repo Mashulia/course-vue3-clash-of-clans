@@ -6,8 +6,9 @@
     <span class="card-name">{{ name }}</span>
     <span class="card-title">{{ title }}</span>
     <div class="card-body">
-      <slot></slot>
-      <router-link class="link" style="display: block; margin-top: 20px" v-if="link" :to="link">See more</router-link>
+      <slot name="body"></slot>
+      <router-link class="link" style="display: block; margin: 20px 0" v-if="link" :to="link">See more</router-link>
+      <slot name="footer"></slot>
     </div>
   </div>
 </template>
